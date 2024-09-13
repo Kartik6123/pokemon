@@ -81,4 +81,19 @@
   .steel {
     background-color: #B8B8D0; /* Light grey for Steel type */
   }
-  
+  /* Neumorphism effect */
+.neumorphic-card {
+   /* Light background color */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 
+    8px 8px 15px rgba(0, 0, 0, 0.2), /* Outer shadow */
+    -8px -8px 15px rgba(255, 255, 255, 0.7); /* Inner shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to enhance the 3D effect */
+.neumorphic-card:hover {
+  box-shadow: 
+    4px 4px 10px rgba(0, 0, 0, 0.2),
+    -4px -4px 10px rgba(255, 255, 255, 0.7);
+}
