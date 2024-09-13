@@ -15,14 +15,13 @@ function App() {
       setAllPokemons(l=>[...l,data])
      });
     }
-  createPokemon(data.results);
-   
+  createPokemon(data.results);  
   }
   useEffect(()=>{
    getPokemon()
   },[]);
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-gray-200 '>
       <div className=" text-5xl text-center mb-4 mt-4 font-mono underline"><h1>Pokemon Evolution Guide</h1> </div>
       <div className='flex flex-wrap justify-evenly'>
       {allPokemons

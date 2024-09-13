@@ -3,7 +3,7 @@ import React from 'react'
 function Pokemon({id,name,img,type}) {
    const style = type + " thumb-container";
   return (
-    <div className={style}>
+    <div className={`${style} hover:scale-105 transform transition-transform duration-300`}>
         <div className='text-sm'>
               #0{id}
         </div>
